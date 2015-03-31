@@ -7,6 +7,7 @@
 #' @param h Numeric vector, candidate bandwidth.
 #' @export
 #' @import Rcpp
+#' @useDynLib rhrBase
 #' @return Numeric vector, the score value for each of the proposed candidate bandwidths.
 
 

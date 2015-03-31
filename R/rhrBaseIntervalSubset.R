@@ -10,9 +10,9 @@
 
 
 rhrBaseIntervalSubset <- function(ts, int) {
-  if (!is.numeric(ts) | is.numeric(int)) {
+  if (!is.numeric(ts) | !is.numeric(int)) {
     stop("ts and int are required to be numeric")
   }
 
-  t2cpp3(ts, int)
+  as.logical(t2cpp3(ts, int))
 }

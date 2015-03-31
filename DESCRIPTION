@@ -8,7 +8,8 @@ Maintainer: Johannes Signer <jsinger@gwdg.de>
 Description: Provides compiled functions that the rhr package builds on.
 License: GPL-3
 LazyData: TRUE
-Imports:
+Imports: 
     Rcpp (>= 0.11.5)
-LinkingTo:
+LinkingTo: 
     Rcpp
+Suggests: testthat
