@@ -4,7 +4,9 @@
 #'
 #' @param x Numeric vector, the x coordinates.
 #' @param y Numeric vector, the y cooridnates.
-#' @param hs Numeric vector, candidate bandwidth.
+#' @param h Numeric vector, candidate bandwidth.
+#' @export
+#' @import Rcpp
 #' @return Numeric vector, the score value for each of the proposed candidate bandwidths.
 
 
@@ -17,5 +19,5 @@ rhrBaseLSCV <- function(x, y, h) {
   if (!is.numeric(x) | !is.numeric(y) | is.numeric(h)) {
     stop("x, y and h are required to be numeric")
   }
-  unbinnedCV(NumericVector x, NumericVector y, NumericVector h)
+  unbinnedCV(x, y, h)
 }

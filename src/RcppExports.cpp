@@ -5,6 +5,45 @@
 
 using namespace Rcpp;
 
+// t2cpp3
+NumericVector t2cpp3(NumericVector t, int interval);
+RcppExport SEXP rhrBase_t2cpp3(SEXP tSEXP, SEXP intervalSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type t(tSEXP);
+    Rcpp::traits::input_parameter< int >::type interval(intervalSEXP);
+    __result = Rcpp::wrap(t2cpp3(t, interval));
+    return __result;
+END_RCPP
+}
+// binnedCV
+NumericVector binnedCV(NumericVector xs, NumericVector ys, NumericVector freq, NumericVector hs);
+RcppExport SEXP rhrBase_binnedCV(SEXP xsSEXP, SEXP ysSEXP, SEXP freqSEXP, SEXP hsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type xs(xsSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type ys(ysSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type freq(freqSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type hs(hsSEXP);
+    __result = Rcpp::wrap(binnedCV(xs, ys, freq, hs));
+    return __result;
+END_RCPP
+}
+// unbinnedCV
+NumericVector unbinnedCV(NumericVector xs, NumericVector ys, NumericVector hs);
+RcppExport SEXP rhrBase_unbinnedCV(SEXP xsSEXP, SEXP ysSEXP, SEXP hsSEXP) {
+BEGIN_RCPP
+    Rcpp::RObject __result;
+    Rcpp::RNGScope __rngScope;
+    Rcpp::traits::input_parameter< NumericVector >::type xs(xsSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type ys(ysSEXP);
+    Rcpp::traits::input_parameter< NumericVector >::type hs(hsSEXP);
+    __result = Rcpp::wrap(unbinnedCV(xs, ys, hs));
+    return __result;
+END_RCPP
+}
 // meanSquaredDistance
 NumericVector meanSquaredDistance(NumericVector x, NumericVector y, double mx, double my);
 RcppExport SEXP rhrBase_meanSquaredDistance(SEXP xSEXP, SEXP ySEXP, SEXP mxSEXP, SEXP mySEXP) {
