@@ -1,7 +1,7 @@
 Package: rhrBase
 Type: Package
 Title: Functions to Analyze Animal Movement Data
-Version: 0.1
+Version: 0.1.0
 Date: 2015-03-31
 Author: Johannes Signer
 Maintainer: Johannes Signer <jsigner@gwdg.de>
