@@ -6,7 +6,7 @@
 #' @return Numeric matrix with the x and y coordinates of the new path.
 
 #' @export
-#'
+#' @example inst/examples/rhrBasePRW.R
 
 rhrBasePRW <- function(x, y) {
 
