@@ -17,4 +17,16 @@ Numeric matrix with the x and y coordinates of the new path.
 \description{
 permuates a walk by reusing the original distances between steps and connecting them with angles drawn from a uniform distribution between 0 and 360.
 }
+\examples{
+set.seed(123)
+x <- cumsum(rnorm(500))
+y <- cumsum(rnorm(500))
+
+## Permutate path by shuffling segments and random adding random angles
+p1 <- rhrBase::rhrBasePRW(x, y)
+
+}
+\references{
+\url{http://www.esajournals.org/doi/abs/10.2307/1939170}
+}
 

@@ -24,4 +24,7 @@ y <- rnorm(500)
 
 msd <- rhrBase::rhrBaseMSD(x, y)
 }
+\references{
+\url{http://www.esajournals.org/doi/abs/10.2307/1937590}
+}
 

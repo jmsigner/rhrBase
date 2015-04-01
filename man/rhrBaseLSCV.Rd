@@ -27,4 +27,7 @@ h <- seq(0.1, 5, 0.1)
 s <- rhrBase::rhrBaseLSCV(x, y, h)
 h[which.min(s)]
 }
+\references{
+\url{http://www.esajournals.org/doi/abs/10.2307/2265701}
+}
 
