@@ -9,6 +9,7 @@
 #' @import Rcpp
 #' @useDynLib rhrBase
 #' @return Numeric vector, the score value for each of the proposed candidate bandwidths.
+#' @references \url{http://www.esajournals.org/doi/abs/10.2307/2265701}
 #'
 #' @example inst/examples/rhrBaseLSCV.R
 

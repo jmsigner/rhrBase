@@ -1,11 +1,11 @@
 Package: rhrBase
 Type: Package
-Title: Helper Functions for the rhr Package
+Title: Functions to Analyze Animal Movement Data
 Version: 0.1
 Date: 2015-03-31
 Author: Johannes Signer
 Maintainer: Johannes Signer <jsigner@gwdg.de>
-Description: Provides compiled functions that the rhr package builds on.
+Description: Collection of few simple functions to analyze data from animal telemetry.
 URL: https://github.com/jmsigner/rhrBase
 License: GPL-3
 LazyData: TRUE

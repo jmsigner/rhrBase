@@ -36,3 +36,16 @@ test_that("Wrong input is recognized", {
 test_that("Dimensions of results are correct", {
   expect_equal(nrow(rhrBasePRW(x, y)), length(x))
 })
+
+context("rhrBase::rhrBaseIntervalSubset")
+x <- seq(0, 3600, by = 60)
+
+test_that("Wrong input is recognized", {
+  expect_error(rhrBaseIntervalSubset(x))
+  expect_error(rhrBaseIntervalSubset(x[1], 1))
+  expect_error(rhrBaseIntervalSubset(x, as.character(y)))
+})
+
+test_that("Dimensions of results are correct", {
+  expect_equal(length(rhrBaseIntervalSubset(x, 1)), length(x))
+})

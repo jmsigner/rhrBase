@@ -5,6 +5,7 @@
 #' @param x Numeric vector, the x cooridnates
 #' @param y Numeric vector, the y coordinates
 #' @return Numeric matrix with the x and y coordinates of the new path.
+#' @references \url{http://www.esajournals.org/doi/abs/10.2307/1937590}
 
 #' @export
 #' @example inst/examples/rhrBaseMSD.R
