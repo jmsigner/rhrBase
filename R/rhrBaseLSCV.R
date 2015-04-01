@@ -1,6 +1,6 @@
 #' Least Square Cross Validation
 #'
-#' Least square cross validation for bandwidth determinationnn for  kernel density estimation.
+#' Least square cross validation to determine bandwidth for  kernel density estimation.
 #'
 #' @param x Numeric vector, the x coordinates.
 #' @param y Numeric vector, the y cooridnates.
@@ -9,6 +9,8 @@
 #' @import Rcpp
 #' @useDynLib rhrBase
 #' @return Numeric vector, the score value for each of the proposed candidate bandwidths.
+#'
+#' @example inst/examples/rhrBaseLSCV.R
 
 
 rhrBaseLSCV <- function(x, y, h) {
@@ -17,7 +19,7 @@ rhrBaseLSCV <- function(x, y, h) {
     stop("x and y are required to be of the same length")
   }
 
-  if (!is.numeric(x) | !is.numeric(y) | is.numeric(h)) {
+  if (!is.numeric(x) | !is.numeric(y) | !is.numeric(h)) {
     stop("x, y and h are required to be numeric")
   }
   unbinnedCV(x, y, h)

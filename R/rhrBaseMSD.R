@@ -7,8 +7,18 @@
 #' @return Numeric matrix with the x and y coordinates of the new path.
 
 #' @export
+#' @example inst/examples/rhrBaseMSD.R
 
 rhrBaseMSD <- function(x, y) {
+
+  if (length(x) != length(y)) {
+    stop("x and y are not of the same length")
+  }
+
+  if (!is.numeric(x) | !is.numeric(y)) {
+    stop("x and y are required to be numeric")
+  }
+
   mx  <- mean(x)
   my  <- mean(y)
   meanSquaredDistance(x, y, mx, my)

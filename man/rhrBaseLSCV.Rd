@@ -17,6 +17,14 @@ rhrBaseLSCV(x, y, h)
 Numeric vector, the score value for each of the proposed candidate bandwidths.
 }
 \description{
-Least square cross validation for bandwidth determinationnn for  kernel density estimation.
+Least square cross validation to determine bandwidth for  kernel density estimation.
+}
+\examples{
+set.seed(123)
+x <- rnorm(500)
+y <- rnorm(500)
+h <- seq(0.1, 5, 0.1)
+s <- rhrBase::rhrBaseLSCV(x, y, h)
+h[which.min(s)]
 }
 
